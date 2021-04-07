@@ -1,6 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
+
 
 export default function SavedList(props) {
+  const history=useHistory()
+  const routeToHome=()=>{
+    history.push("/")
+  }
   return (
     <div className="saved-list">
       <h3>Saved Movies:</h3>
